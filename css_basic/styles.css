@@ -3,67 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox Layout</title>
-  <style>
-    /* General styles for body */
-    body {
-      display: flex; /* Make body a flex container */
-      flex-direction: column; /* Stack children vertically */
-      margin: 0; /* Remove default margin */
-      height: 100vh; /* Ensure body takes full viewport height */
-    }
-
-    /* Header */
-    header {
-      background: lightblue;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    /* Main container */
-    main {
-      display: flex; /* Make main a flex container */
-      flex-direction: row; /* Arrange children in a row */
-      flex: auto; /* Allow it to take available space */
-    }
-
-    /* Article */
-    article {
-      flex: 2; /* Takes 2/3 of the space */
-      overflow-y: auto; /* Allow vertical scrolling */
-      padding: 1rem;
-      background: lightgray;
-    }
-
-    /* Aside */
-    aside {
-      flex: 1; /* Takes 1/3 of the space */
-      overflow-y: auto; /* Allow vertical scrolling */
-      padding: 1rem;
-      background: lightgreen;
-    }
-
-    /* Footer */
-    footer {
-      background: lightcoral;
-      padding: 1rem;
-      text-align: center;
-    }
-  </style>
+  <title>Unique Flexbox Layout</title>
+  <link href="base.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
-<body>
+<body class="works_on_smartphone">
   <header>
-    Content of the <header> tag
+    <ul>
+      <li class="logo">&#9733;</li>
+      <li>Content of the <header> tag</li>
+    </ul>
   </header>
   <main>
     <article>
-      Content of the <article> tag
+      <h1>Welcome to Our Website</h1>
+      <p>
+        This is a unique section where you can showcase content. Experiment with styles and layouts here to make it stand out.
+      </p>
+      <ul>
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+      </ul>
     </article>
     <aside>
-      Content of the <aside> tag
+      <h2>Quick Links</h2>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
     </aside>
   </main>
   <footer>
     Content of the <footer> tag
   </footer>
-</body
+</body>
+</html>
